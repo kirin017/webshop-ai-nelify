@@ -1,7 +1,6 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 // Types
 type Product = {
@@ -161,33 +160,30 @@ export default function Index() {
 
       {/* New Arrivals */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-medium text-neutral-900 mb-8">New Arrivals</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {newArrivals.map((product) => (
-            <motion.div 
-              key={product.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <a href={`/product/${product.id}`} className="block relative aspect-square bg-neutral-100 mb-4 overflow-hidden">
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </a>
-              <h3 className="text-lg font-medium text-neutral-900">{product.name}</h3>
-              <p className="text-neutral-600">${product.price}</p>
-              <button className="mt-2 px-4 py-2 bg-neutral-900 text-white text-sm hover:bg-neutral-800 transition-colors">
-                Add to Cart
-              </button>
-            </motion.div>
-          ))}
+  <h2 className="text-2xl font-medium text-neutral-900 mb-8">New Arrivals</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {newArrivals.map((product) => (
+      <div 
+        key={product.id}
+
+        className="group"
+      >
+        <div className="block relative aspect-square bg-neutral-100 mb-4 overflow-hidden">
+          <img 
+            src={product.image} 
+            alt={product.name} 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
         </div>
-      </section>
+        <h3 className="text-lg font-medium text-neutral-900">{product.name}</h3>
+        <p className="text-neutral-600">${product.price}</p>
+        <button className="mt-2 px-4 py-2 bg-neutral-900 text-white text-sm hover:bg-neutral-800 transition-colors">
+          Add to Cart
+        </button>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Featured Products */}
       <section className="bg-neutral-100 py-16">

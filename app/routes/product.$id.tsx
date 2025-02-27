@@ -30,9 +30,9 @@ export async function loader({ params }: LoaderFunctionArgs) {
       "Assembly required"
     ],
     images: [
-      "/api/placeholder/800/1000",
-      "/api/placeholder/800/1000",
-      "/api/placeholder/800/1000"
+      "/images/GV-REB5800_180.png",
+      "/images/GV-REB5800_180.png",
+      "/images/GV-REB5800_180.png"
     ],
     category: "furniture",
     related: ["2", "4", "6"]
@@ -43,21 +43,21 @@ export async function loader({ params }: LoaderFunctionArgs) {
       id: "2", 
       name: "Simple Table", 
       price: 399, 
-      image: "/api/placeholder/500/600", 
+      image: "/images/GV-REB5800_180.png", 
       category: "furniture" 
     },
     { 
       id: "4", 
       name: "Wooden Shelf", 
       price: 199, 
-      image: "/api/placeholder/500/600", 
+      image: "/images/GV-REB5800_180.png", 
       category: "storage" 
     },
     { 
       id: "6", 
       name: "Cotton Throw", 
       price: 69, 
-      image: "/api/placeholder/500/600", 
+      image: "/images/GV-REB5800_180.png", 
       category: "textiles" 
     }
   ];
