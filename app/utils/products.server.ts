@@ -1,5 +1,5 @@
 import data from "../../data/products.json";
-import { distance } from "@energetic-ai/embeddings";
+
 
 export type ProductShort = {
   id: string;

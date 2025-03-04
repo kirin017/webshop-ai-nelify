@@ -23,7 +23,7 @@ export default function App() {
               <Link to="/" className="font-semibold text-xl text-neutral-800">MINIMAL</Link>
               <div className="hidden md:flex ml-10 space-x-8">
                 <Link to="/" className="text-neutral-600 hover:text-neutral-900">Home</Link>
-                <Link to="/shop" className="text-neutral-600 hover:text-neutral-900">Shop</Link>
+                <Link to="/products" className="text-neutral-600 hover:text-neutral-900">Product</Link>
                 <Link to="/about" className="text-neutral-600 hover:text-neutral-900">About</Link>
                 <Link to="/contact" className="text-neutral-600 hover:text-neutral-900">Contact</Link>
               </div>

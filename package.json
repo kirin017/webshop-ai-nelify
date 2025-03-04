@@ -12,6 +12,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@prisma/client": "^6.4.1",
     "@remix-run/netlify": "^1.19.3",
     "@remix-run/node": "^2.15.3",
     "@remix-run/react": "^2.15.3",
@@ -37,12 +38,24 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.5.3",
+    "prisma": "^6.4.1",
     "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^4.2.1"
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "description": "- 📖 [Remix docs](https://remix.run/docs)",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
