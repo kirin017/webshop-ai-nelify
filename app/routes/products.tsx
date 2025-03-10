@@ -54,7 +54,7 @@ export default function Products() {
               key={product.id}
               className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
             >
-              <Link to={`/products/${product.id}`} className="block">
+              <Link to={`/product/${product.id}`} className="block">
                 {/* Hình ảnh */}
                 <div className="w-full h-36 sm:h-40 bg-gray-100 flex items-center justify-center">
                   <img
